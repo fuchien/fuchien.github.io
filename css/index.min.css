@@ -463,7 +463,7 @@ nav {
   z-index: 10; }
 
 .nav-up {
-  top: -70px; }
+  top: -150px; }
 
 nav a {
   color: #FFF;
@@ -576,9 +576,11 @@ header div {
   position: relative; }
 
 header img {
-  max-height: 150px; }
+  max-height: 150px;
+  margin: 20px auto; }
 
 h1 {
+  margin: 20px auto;
   font-size: 40px;
   font-weight: 800; }
 
@@ -597,7 +599,7 @@ header a {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-weight: bold;
-  font-size: 13px; }
+  font-size: 25px; }
 
 header a:hover {
   color: #2377b9; }
