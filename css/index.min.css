@@ -639,9 +639,9 @@ header a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   margin: 0 auto;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -689,10 +689,6 @@ header a:hover {
   .destaque {
     padding-top: 12vh;
     background-image: url("https://source.unsplash.com/category/technology/1600x900"); }
-  .destaque ul {
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap; }
   .destaque li {
     width: 30%; } }
 
