@@ -551,7 +551,7 @@ header {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  background-image: url("https://source.unsplash.com/category/nature/1800x900");
+  background-image: url("../img/head2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -565,9 +565,9 @@ header:after {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 0, 0.4)), color-stop(20%, rgba(0, 0, 0, 0.8)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.8));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.8));
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 0, 0.3)), color-stop(20%, rgba(0, 0, 0, 0.8)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.8));
   z-index: -1; }
 
 header div {
@@ -604,29 +604,54 @@ header a {
 header a:hover {
   color: #2377b9; }
 
+@media (min-width: 768px) {
+  header {
+    background-image: url("../img/head2.jpg"); } }
+
 /* destaque */
 .destaque {
   text-align: center;
-  padding-top: 2vh;
-  position: relative; }
+  min-height: 100vh;
+  position: relative;
+  background-image: url("https://source.unsplash.com/category/technology/800x600");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+  color: #FFF; }
 
 .destaque:after {
   content: "";
-  background: url(../img/fundo.png);
-  background-size: 25px 25px;
-  opacity: 0.05;
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: -1; }
 
 .destaque h2 {
-  margin: 5px auto; }
+  margin: auto;
+  padding: 2rem; }
+
+.destaque ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 90%; }
 
 .destaque li {
-  margin: 20px auto; }
+  margin: auto;
+  padding: 1rem; }
 
 .destaques:hover {
   -webkit-transform: scale(1.1);
@@ -662,12 +687,9 @@ header a:hover {
 
 @media (min-width: 768px) {
   .destaque {
-    padding-top: 12vh; }
+    padding-top: 12vh;
+    background-image: url("https://source.unsplash.com/category/technology/1600x900"); }
   .destaque ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap; }
@@ -677,7 +699,24 @@ header a:hover {
 /* detail */
 .detail {
   padding: 0 5%;
-  padding-top: 2vh; }
+  padding-top: 2rem;
+  background-image: url("https://source.unsplash.com/category/buildings/800x600");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+  color: #FFF; }
+
+.detail:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; }
 
 .detail h2 {
   color: #2377b9;
@@ -692,7 +731,8 @@ header a:hover {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    padding-top: 12vh; }
+    padding-top: 12vh;
+    background-image: url("https://source.unsplash.com/category/buildings/1600x900"); }
   .detail h2 {
     width: 100%;
     text-align: left; }
@@ -911,3 +951,6 @@ header a:hover {
 
 .footer a:hover {
   background-color: rgba(35, 35, 35, 0.1); }
+
+.footer .up:hover a {
+  background-color: transparent; }
