@@ -559,7 +559,7 @@ header a:hover {
 
 @media (min-width: 768px) {
   .header {
-    padding-top: 8rem; }
+    padding-top: 15vh; }
   .header img {
     max-height: 300px; }
   .header ul li {
@@ -573,8 +573,7 @@ header a:hover {
     display: flex;
     -webkit-flex-flow: row;
     -ms-flex-flow: row;
-    flex-flow: row;
-    margin: 20rem auto; }
+    flex-flow: row; }
   .header1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -583,7 +582,7 @@ header a:hover {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-    margin: auto 5rem;
+    margin: auto 6rem;
     width: 60%; } }
 
 /* destaque */
