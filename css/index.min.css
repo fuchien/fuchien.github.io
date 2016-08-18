@@ -528,13 +528,16 @@ header a:hover {
 .header a {
   color: #FFF; }
 
+.header ul li a {
+  padding: 1rem; }
+
 .header ul li {
   background-color: rgba(30, 180, 30, 0.8);
   color: #FFF;
   text-transform: uppercase;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  padding: .6em;
+  padding: 1em;
   position: relative;
   z-index: 1; }
 
@@ -563,9 +566,9 @@ header a:hover {
   .header img {
     max-height: 300px; }
   .header ul li {
-    padding: 2rem; }
+    padding: 1rem; }
   .header ul li a {
-    padding: 1.5em; }
+    padding: 1.8em; }
   .header {
     display: -webkit-box;
     display: -webkit-flex;
