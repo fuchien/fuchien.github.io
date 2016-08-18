@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/index.min.css"/>
   </head>
   <body>
-    <nav>
+    <!--<nav>
       <a class="chien" href="#inicio">chien</a>
       <ul>
         <li>
@@ -38,14 +38,20 @@
           </a>
         </li>
       </ul>
-    </nav>
+    </nav>-->
     <header id="inicio" class="parallax" data-speed="15">
-      <div>
+      <div class="header">
         <img src="img/1.jpg" alt="principal">
-        <h1>Hsu Fu Chien</h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-        <a href="#destaque"><span class="fa fa-angle-down fa-5x"></span></a>
+        <div class="header1">
+          <h1>Hsu Fu Chien</h1>
+          <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+          <ul>
+            <li><a href="#detalhe">detalhes</a></li>
+            <li><a href="#contato">contato</a></li>
+          </ul>
+        </div>
       </div>
+      <a href="#destaque" class="down"><span class="fa fa-angle-down fa-5x"></span></a>
     </header>
     <section class="destaque parallax" id="destaque" data-speed="10">
       <h2>Destaques</h2>
@@ -61,28 +67,25 @@
       </ul>
     </section>
     <section class="detail parallax" id="detalhe" data-speed="10">
-      <h2>Detalhes</h2>
-      <p>Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes Detalhes</p>
-      <div class="img-container">
-        <img src="img/head2.jpg" alt="head" />
-      </div>
+      <div class="text">Semana da Tecnologia Fatec de Sorocaba</div>
     </section>
-    <section class="faixa">
-      <p>uma frase bem chamativa</p>
+    <section class="detail parallax detail2" id="detalhe" data-speed="10">
+      <div class="text">Curso de Mandarim</div>
     </section>
+
     <section class="contact parallax" id="contato" data-speed="10">
       <h2>Contato</h2>
       <p>Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato Contato</p>
       <ul>
-        <li><a href="tel:+5511970213542">(11)97021-3542</a></li>
+        <li><a href="tel:+5511970213542">(11) 97021-3542</a></li>
         <li><a href="mailto:fuchienhsu@hotmai.com">fuchienhsu@hotmail.com</a></li>
       </ul>
     </section>
-    <footer class="footer">
+    <footer class="footer parallax">
     		<div class="highlight-area">
       		<h2>Número&Email</h2>
       			<ul>
-      				<li class="li li1"><a href="tel:+5515970213542">(11)97021-3542</a></li>
+      				<li class="li li1"><a href="tel:+5515970213542">(11) 97021-3542</a></li>
       				<li class="li li2"><a href="http://codepen.io/fuchien/pens/public/" target="_blank"><span class="fa fa-codepen"></span> codepen.io/</a></li>
               <li class="li li5"><a href="https://www.linkedin.com/in/fu-chien-hsu-a734a3a8"target="_blank"><span class="fa fa-linkedin-square"></span> linkedin.com/</a></li>
             </ul>
