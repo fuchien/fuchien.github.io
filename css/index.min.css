@@ -798,7 +798,8 @@ header a:hover {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    padding-top: 5vh; }
+    padding-top: 5vh;
+    padding-bottom: 5vh; }
   .contact h2 {
     width: 100%; }
   .contact p {
