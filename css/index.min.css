@@ -741,10 +741,11 @@ header a:hover {
 
 .contact:after {
   content: "";
-  background-image: url("../img/head1.jpg");
+  background-image: url("../img/head5.jpg");
   background-size: cover;
+  background-position: bottom;
   background-attachment: fixed;
-  opacity: .8;
+  opacity: .3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -810,10 +811,10 @@ header a:hover {
 
 /* footer */
 .footer {
-  background-image: url("../img/head5.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/head4.jpg");
+  background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
