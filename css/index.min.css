@@ -448,7 +448,8 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: 'Alice', sans-serif; }
+  font-family: 'Alice', sans-serif;
+  overflow-x: hidden; }
 
 /* nav */
 /* header */
@@ -539,7 +540,9 @@ header a:hover {
   transition: all .3s ease;
   padding: 1em;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-animation: aparece 1s;
+  animation: aparece 1s; }
 
 .header ul li:before {
   position: absolute;
@@ -685,10 +688,7 @@ header a:hover {
   background-attachment: fixed;
   position: relative;
   z-index: 2;
-  color: #FFF;
-  -webkit-transform: preserve-3d;
-  -ms-transform: preserve-3d;
-  transform: preserve-3d; }
+  color: #FFF; }
 
 .detail:after {
   content: '';
@@ -705,12 +705,12 @@ header a:hover {
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   line-height: 1.5;
   margin: 20vh auto;
   width: 30vw;
+  position: absolute;
   right: 10%; }
 
 .detail2 {
@@ -951,11 +951,23 @@ header a:hover {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
 
 /* keyframe */
+@-webkit-keyframes aparece {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.001);
+    transform: scale(0.001); } }
+@keyframes aparece {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.001);
+    transform: scale(0.001); } }
+
 @-webkit-keyframes flutua {
   from {
     top: -5px; }
   to {
     top: 5px; } }
+
 @keyframes flutua {
   from {
     top: -5px; }
