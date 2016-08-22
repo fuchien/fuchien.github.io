@@ -686,7 +686,8 @@ header a:hover {
   background-attachment: fixed;
   position: relative;
   z-index: 2;
-  color: #FFF; }
+  color: #FFF;
+  text-align: center; }
 
 .detail:after {
   content: '';
@@ -699,17 +700,45 @@ header a:hover {
   z-index: -1; }
 
 .detail .text {
-  font-size: 0.8em;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  line-height: 1.5;
-  margin: 20vh auto;
-  width: 30vw;
+  margin: 10vh auto;
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
   position: absolute;
-  right: 10%; }
+  right: 10%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
+.text img, .text div {
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
+.text a {
+  -webkit-transition: all .8s linear;
+  transition: all .8s linear; }
+
+.text a:hover {
+  color: #4169E1; }
+
+.text div {
+  font-size: .6em;
+  padding-top: 5rem;
+  width: 12rem;
+  height: 12rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
+.fatec img {
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s; }
+
+.fatec:hover img {
+  margin-left: 12rem; }
 
 .detail2 {
   background-image: url("../img/head5.jpg"); }
