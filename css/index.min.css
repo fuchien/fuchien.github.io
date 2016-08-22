@@ -723,28 +723,40 @@ header a:hover {
 
 .text div {
   font-size: .6em;
-  padding-top: 5rem;
   width: 12rem;
-  height: 12rem;
-  -webkit-border-radius: 50%;
-  border-radius: 50%; }
+  height: 12rem; }
 
-.fatec img {
-  background-color: #FFF;
+.fatec div, .mandarim div {
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
   -webkit-transition: margin-left 1s;
-  transition: margin-left 1s; }
+  transition: margin-left 1s;
+  padding-top: 5rem; }
 
-.fatec:hover img {
-  margin-left: 12rem; }
+.fatec div {
+  margin-left: 24rem; }
+
+.fatec:hover div {
+  margin-left: 0; }
+
+.fatec img, .mandarim img {
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.5); }
 
 .detail2 {
   background-image: url("../img/head5.jpg"); }
 
 .detail2 .text {
   right: 60%; }
+
+.mandarim div {
+  margin-left: -12rem; }
+
+.mandarim:hover div {
+  margin-left: 0; }
 
 @media (min-width: 768px) {
   .detail {
