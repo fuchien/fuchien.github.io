@@ -521,55 +521,23 @@ header a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1.5rem;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-
-.header ul li a {
-  padding: 1rem; }
+  margin-top: 1.5rem; }
 
 .header ul li {
-  background-color: rgba(30, 180, 30, 0.8);
-  color: #FFF;
-  text-transform: uppercase;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  padding: 1em;
-  position: relative;
-  z-index: 1;
-  -webkit-animation: aparece 1s;
-  animation: aparece 1s; }
+  margin: auto; }
 
-.header ul li:before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: '';
-  height: 1px;
-  width: 100%;
-  background: #FFF;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  z-index: -1; }
+.header1 a:hover {
+  background-color: inherit; }
 
-.header ul li:hover a {
-  color: rgba(30, 180, 30, 0.8);
-  z-index: 2; }
-
-.header ul li:hover:before {
-  height: 100%; }
+.header1 img {
+  max-height: 50px;
+  max-width: 50px; }
 
 @media (min-width: 768px) {
   .header {
     padding-top: 15vh; }
   .header img {
     max-height: 300px; }
-  .header ul li {
-    max-width: 50%;
-    padding: 1rem; }
-  .header ul li a {
-    padding: 1.8em; }
   .header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -579,15 +547,14 @@ header a:hover {
     -ms-flex-flow: row;
     flex-flow: row; }
   .header1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-    margin: auto 6rem;
-    width: 60%; } }
+    margin: auto 3rem;
+    width: 70%; }
+  .header1 img {
+    max-height: 90px;
+    max-width: 90px; } }
 
 /* destaque */
 .destaque {
