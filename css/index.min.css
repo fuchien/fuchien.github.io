@@ -526,8 +526,8 @@ header a:hover {
 .header ul li {
   margin: auto; }
 
-.header1 a:hover {
-  background-color: inherit; }
+.header ul li img:hover {
+  background-color: #DDD; }
 
 .header1 img {
   max-height: 50px;
@@ -542,19 +542,16 @@ header a:hover {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row; }
+    display: flex; }
   .header1 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-    margin: auto 3rem;
+    margin: auto 4rem;
     width: 70%; }
   .header1 img {
-    max-height: 90px;
-    max-width: 90px; } }
+    max-height: 80px;
+    max-width: 80px; } }
 
 /* destaque */
 .destaque {
