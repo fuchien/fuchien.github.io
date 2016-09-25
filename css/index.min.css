@@ -466,7 +466,6 @@ header {
   flex-flow: column;
   background-image: url("../img/head3.jpg");
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
   z-index: 2; }
 
@@ -534,6 +533,8 @@ header a:hover {
   max-width: 50px; }
 
 @media (min-width: 768px) {
+  header {
+    background-attachment: fixed; }
   .header {
     padding-top: 15vh; }
   .header img {
@@ -562,7 +563,6 @@ header a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   z-index: 2;
   color: #FFF; }
 
@@ -638,7 +638,8 @@ header a:hover {
 
 @media (min-width: 768px) {
   .destaque {
-    padding-top: 4rem; }
+    padding-top: 4rem;
+    background-attachment: fixed; }
   .destaque li {
     width: 20%; } }
 
@@ -647,7 +648,6 @@ header a:hover {
   min-height: 100vh;
   background-image: url("../img/fatec1.png");
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
   z-index: 2;
   color: #FFF;
@@ -665,8 +665,8 @@ header a:hover {
 
 .detail .text {
   margin: 10vh auto;
-  width: 12rem;
-  height: 12rem;
+  width: 7rem;
+  height: 7rem;
   overflow: hidden;
   position: absolute;
   right: 10%;
@@ -725,13 +725,16 @@ header a:hover {
 
 @media (min-width: 768px) {
   .detail {
-    padding-top: 4rem; }
+    padding-top: 4rem;
+    background-attachment: fixed; }
   .detail .text {
-    font-size: 2em; } }
+    font-size: 2em;
+    width: 12rem;
+    height: 12rem; } }
 
 /* contato */
 .contact {
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 1vh 5vw 2vh 5vw;
   display: -webkit-box;
   display: -webkit-flex;
@@ -748,7 +751,6 @@ header a:hover {
   background-image: url("../img/head5.jpg");
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
   opacity: .3;
   top: 0;
   left: 0;
@@ -811,12 +813,13 @@ header a:hover {
     width: 50%;
     max-width: 300px; }
   .contact ul {
-    width: 50%; } }
+    width: 50%; }
+  .contact:after {
+    background-attachment: fixed; } }
 
 /* footer */
 .footer {
   background-image: url("../img/head4.jpg");
-  background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
   display: -webkit-box;
@@ -826,9 +829,9 @@ header a:hover {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  padding-bottom: 10vh;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  min-height: 100vh; }
 
 .footer:before {
   content: '';
@@ -845,7 +848,8 @@ header a:hover {
     -webkit-flex-flow: row;
     -ms-flex-flow: row;
     flex-flow: row;
-    padding: 1vh 3vw; } }
+    padding: 1vh 3vw;
+    min-height: 0vh; } }
 
 .footer h2 {
   text-transform: uppercase;
@@ -875,6 +879,8 @@ header a:hover {
   margin-bottom: 0; }
 
 @media (min-width: 768px) {
+  .footer {
+    background-attachment: fixed; }
   .footer .highlight-area {
     margin-bottom: 0; }
   .footer .highlight-area:first-of-type h2 {
