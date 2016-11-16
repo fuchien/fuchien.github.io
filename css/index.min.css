@@ -471,10 +471,24 @@ header {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  background-image: url("../img/head3.jpg");
+  background-image: url("../img/space1.jpg");
   background-size: cover;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-animation: space 30s infinite alternate linear;
+  animation: space 30s infinite alternate linear; }
+
+@-webkit-keyframes space {
+  from {
+    background-position: 150px 150px; }
+  to {
+    background-position: -150px -150px; } }
+
+@keyframes space {
+  from {
+    background-position: 150px 150px; }
+  to {
+    background-position: -150px -150px; } }
 
 header:after {
   content: '';
