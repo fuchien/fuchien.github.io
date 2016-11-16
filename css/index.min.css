@@ -661,8 +661,8 @@ header a:hover {
   transition: background 0.2s, color 0.2s; }
 
 .hi-icon-effect-5 .cv:hover:before {
-  -webkit-animation: spinAround 2s ease infinite;
-  animation: spinAround 2s ease infinite; }
+  -webkit-animation: spinAround 2s linear infinite;
+  animation: spinAround 2s linear infinite; }
 
 @-webkit-keyframes spinAround {
   from {
@@ -868,8 +868,8 @@ header a:hover {
 
 .fatec div, .mandarim div {
   padding: 2px;
-  background-color: #4169E1;
-  opacity: 0.8;
+  background-color: #fff;
+  color: #4169E1;
   position: absolute;
   top: 0;
   left: 0;
