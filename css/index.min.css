@@ -575,6 +575,9 @@ header a:hover {
 .hi-icon-mail:before {
   content: "\e00d"; }
 
+.hi-icon-bookmark:before {
+  content: "\e011"; }
+
 /*.hi-icon-effect-3 .hi-icon {
 	box-shadow: 0 0 0 4px #fff;
 	transition: color 0.3s;
@@ -650,6 +653,32 @@ header a:hover {
 .hi-icon-effect-5b .hi-iconb:hover:before {
   -webkit-animation: toLeftFromRight 0.3s forwards;
   animation: toLeftFromRight 0.3s forwards; }
+
+.hi-icon-effect-5 .cv {
+  -webkit-box-shadow: 0 0 0 4px white;
+  box-shadow: 0 0 0 4px white;
+  -webkit-transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s; }
+
+.hi-icon-effect-5 .cv:hover:before {
+  -webkit-animation: spinAround 2s ease infinite;
+  animation: spinAround 2s ease infinite; }
+
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 @-webkit-keyframes toLeftFromRight {
   49% {
