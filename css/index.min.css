@@ -471,24 +471,24 @@ header {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  background-image: url("../img/space1.jpg");
+  background-image: url("../img/space2.jpg");
   background-size: cover;
   position: relative;
   z-index: 2;
-  -webkit-animation: space 30s infinite alternate linear;
-  animation: space 30s infinite alternate linear; }
+  -webkit-animation: space 20s infinite alternate linear;
+  animation: space 20s infinite alternate linear; }
 
 @-webkit-keyframes space {
   from {
-    background-position: 150px 150px; }
+    background-position: -150px 150px; }
   to {
-    background-position: -150px -150px; } }
+    background-position: 150px -150px; } }
 
 @keyframes space {
   from {
-    background-position: 150px 150px; }
+    background-position: -150px 150px; }
   to {
-    background-position: -150px -150px; } }
+    background-position: 150px -150px; } }
 
 header:after {
   content: '';
@@ -804,9 +804,9 @@ header a:hover {
 .destaque li:nth-of-type(4) div {
   background-image: url("../img/jquery.png"); }
 
-/*.destaque li:nth-of-type(5) div {
- background-image: url('../img/php.png');
-}*/
+.destaque li:nth-of-type(8) div {
+  background-image: url("../img/nodejs.png"); }
+
 .destaque li:nth-of-type(6) div {
   background-image: url("../img/git.png"); }
 
